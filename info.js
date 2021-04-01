@@ -31,8 +31,3 @@ const mostSkilledDev = (person, person2) => {
 return (person.language.length - person2.language.length > 0 ? person.firstName :
         person.language.length - person2.language.length === 0 ? 'draw' : person2.firstName)
 }
-
-
-printInfo(bob)
-console.log(canVote(alice))
-console.log(mostSkilledDev(alice, charlie))
