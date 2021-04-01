@@ -9,13 +9,8 @@ class Point {
   isEqual(point) {
     return this.x === point.x && this.y === point.y ? true : false
   }
-  distance(point2) {
-    let xa = this.x * this.x
-    let xb = this.y * this.y
-    let ya = point2.x * point2.x
-    let yb = point2.y * point2.y
-
-    return (Math.sqrt((xb - xa) + (yb - ya)))
+  distance(point) {
+    return Math.sqrt((Math.pow((point.x-this.x),2))+(Math.pow((point.y-this.y),2)))
   }
 }
 
