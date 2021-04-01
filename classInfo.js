@@ -23,3 +23,5 @@ const alice = new Human('alice', 'coucou', 18, ['javascript', 'python'])
 const bob = new Human('bob', 'cou', 10, ['javascript', 'python'])
 
 bob.printInfo()
+
+exports.Human = Human
